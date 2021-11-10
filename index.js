@@ -17,6 +17,7 @@ app.use('/orders', Order)
 
 //const dbconn = process.env.DBCONN || '<defult>'
 
+//connect to db
 const dbconn = 'mongodb + srv://order:order123@cluster0.q5oir.mongodb.net/ordersystem?retryWrites=true&w=majority'
 mongoose.connect(dbconn, () => console.log('connected to db maybe'))
 
